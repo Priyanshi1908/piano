@@ -26,18 +26,18 @@ h1 {
   color: var(--key-white);
   margin-bottom: 2rem;
   text-shadow: 0 0 10px var(--violet-glow);
-  margin-top: 150px;
+  margin-top:150px;
 }
 
 .piano {
   display: flex;
-  width: 900px;
   justify-content: center;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 60px var(--violet-glow);
   backdrop-filter: blur(5px);
+  width:900px;
 }
 
 .white-key {
@@ -84,3 +84,11 @@ h1 {
   transform: scale(0.98);
 }
 
+.white-key.active, .black-key.active {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px var(--violet-glow);
+}
+
+.white-key:active, .black-key:active {
+  transform: scale(0.98);
+}
